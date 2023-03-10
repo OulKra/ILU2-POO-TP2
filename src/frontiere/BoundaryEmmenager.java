@@ -10,7 +10,6 @@ public class BoundaryEmmenager {
 	}
 
 	public void emmenager(String nomVisiteur) {
-		System.out.println(nomVisiteur + " " + controlEmmenager.isHabitant(nomVisiteur));
 		if (controlEmmenager.isHabitant(nomVisiteur)) {
 			System.out.println(
 					"Mais vous êtes déjà un habitant du village !");
@@ -31,6 +30,7 @@ public class BoundaryEmmenager {
 					System.out.println("Bienvenu villageois" + nomVisiteur);
 					String question2 = "Quelle est votre force ?";
 					int force = Clavier.entrerEntier(question2);
+					controlEmmenager.ajouterGaulois(nomVisiteur, force);
 					break;
 
 				default:
