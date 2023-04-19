@@ -16,7 +16,7 @@ public class BoundaryLibererEtal {
 		}
 		else
 		{
-			String[] donneesEtal = controlLibererEtal.libererEtal(nomVendeur);
+			String[] donneesEtal = controlLibererEtal.donneesEtals(nomVendeur);
 			if(donneesEtal[0] == "Vrai")
 			{
 				System.out.println("Vous avez vendu " + donneesEtal[4] + " sur " + donneesEtal[3] + " " + donneesEtal[2]);
